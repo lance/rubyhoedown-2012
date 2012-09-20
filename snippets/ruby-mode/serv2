@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: tb service2
+# key: serv2
+# --
+service TweetGrabber do
+  config do
+    search_terms %w{billsidea}
+    queue_name "/queue/tweets"
+  end
+end
+
+queue "/queue/tweets"

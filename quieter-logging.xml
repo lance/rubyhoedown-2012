@@ -1,0 +1,138 @@
+            <logger category="org.torquebox.core.runtime">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.clustering.infinispan">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.quartz.impl.StdSchedulerFactory">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.quartz.simpl.RAMJobStore">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.hornetq.core.server.impl.HornetQServerImpl">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.torquebox.core.datasource">
+                <level name="ERROR"/>
+            </logger>
+            <logger category="org.torquebox.db">
+                <level name="WARN"/>
+            </logger>
+            <logger category="jacorb.poa">
+                <level name="WARN"/>
+            </logger>
+            <logger category="jacorb.orb">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.hornetq.ra.HornetQResourceAdapter">
+                <level name="WARN"/>
+            </logger>
+            <logger category="jacorb.orb.iiop">
+                <level name="WARN"/>
+            </logger>
+            <logger category="com.arjuna.ats.jbossatx">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.infinispan.factories.GlobalComponentRegistry">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.hornetq.core.server.impl.FileLockNodeManager">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.xnio">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.apache.coyote.http11.Http11Protocol">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.connector.subsystems.datasources">
+                <level name="ERROR"/>
+            </logger>
+            <logger category="org.hornetq.core.persistence.impl.journal.JournalStorageManager">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.infinispan.jmx.CacheJmxRegistration">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.hornetq.core.remoting.impl.netty.NettyAcceptor">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.deployment.connector">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.connector.services.resourceadapters.ResourceAdapterActivatorService$ResourceAdapterActivator">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.remoting">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.remoting">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.server.deployment.scanner">
+                <level name="WARN"/>
+            </logger>
+            <logger category="jacorb.codeset">
+                <level name="ERROR"/>
+            </logger>
+            <logger category="org.projectodd.polyglot.cache.as">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.quartz.core.SchedulerSignalerImpl">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.osgi">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.messaging">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.jacorb">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.jaxr">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.ws.common.management.AbstractServerConfig">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.mail.extension">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.naming">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.connector.logging">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.webservices">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.security">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.configadmin">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.logging">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.jboss.as.server">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.xnio.nio">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.quartz.core.QuartzScheduler">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.infinispan.eviction.PassivationManagerImpl">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.infinispan.configuration.cache.EvictionConfigurationBuilder">
+                <level name="WARN"/>
+            </logger>
+            <logger category="org.infinispan.config.ConfigurationValidatingVisitor">
+                <level name="WARN"/>
+            </logger>

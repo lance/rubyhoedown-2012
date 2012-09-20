@@ -1,0 +1,12 @@
+# -*- mode: snippet -*-
+# name: tb job config
+# key: job2
+# --
+TorqueBox.configure do
+
+  job RandomIdeaSender do
+    cron '*/10 * * * * ?'
+  end
+  
+end
+

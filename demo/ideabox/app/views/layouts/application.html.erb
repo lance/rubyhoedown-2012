@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IdeaBox</title>
+  <script type="text/javascript">
+    var stomp_url = "<%= stomp_url%>";
+  </script>
+  <script type="text/javascript" src='/stilts-stomp.js'></script>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<% if flash.notice %>
+  <div id="notice">
+    <span>
+      <%= flash.notice %>
+    </span>
+  </div>
+<% end %>
+<div id="heading">IdeaBox</div>
+<%= yield %>
+
+</body>
+</html>

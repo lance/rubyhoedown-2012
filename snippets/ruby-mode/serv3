@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: tb service3
+# key: serv3
+# --
+queue = TorqueBox::Messaging::Queue.new("/queue/incoming-tweets")
+@tweets = []
+10.times do
+  tweet = queue.receive(:timeout => 1)
+  @tweets << tweet if tweet
+end

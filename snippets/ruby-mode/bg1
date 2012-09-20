@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: tb bg1
+# key: bg1
+# --
+always_background :post_to_twitter

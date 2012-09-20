@@ -1,0 +1,13 @@
+# -*- mode: snippet -*-
+# name: tb proc2
+# key: proc2
+# --
+do
+  processor TweetAnalyzer do
+    config do
+      queue_name "/queue/analyzed-tweets"
+    end
+  end
+end
+
+queue "/queue/analyzed-tweets"

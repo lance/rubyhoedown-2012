@@ -1,0 +1,22 @@
+
+= render 'form'
+
+%hr
+
+.left
+  %table.ideas
+    - @ideas.each do |idea|
+      %tr
+        %td.text{:colspan=>2}= idea.text
+      %tr
+        %td.time= idea.created_at.to_formatted_s(:db)
+        %td.controls= link_to 'Trash It', idea, :confirm => 'Are you sure you want to get rid of this VALUABLE idea?', :method => :delete
+.right
+  %table#tweets
+    - (@tweets || []).each do |tweet|
+      %tr
+        %td.text{:class=>"score-#{tweet[:score]}"}
+          %span.user
+            = tweet[:user]
+          = "- #{tweet[:text]}"
+

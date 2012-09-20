@@ -1,0 +1,46 @@
+// Place all the styles related to the ideas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ideas {
+    .text {
+        font-size: 1.4em;
+    }
+   .controls {
+        font-size: 0.8em;
+    }
+}
+
+.tweets {
+    .text {
+        font-size: 1.2em;
+        .user {
+            font-style: italic;
+        }
+    }
+}
+.ideas, .tweets {
+    .time {
+        padding-left: 10px;
+    }
+}
+
+.field {
+    input[type="submit"] {
+        font-size: 20px;
+    }
+}
+
+.left, .right {
+    width: 50%;
+    float: left;
+}
+
+@for $i from 6 through 22 {
+    $adjusted-score: $i - 10;
+    .score-#{$i} {
+        font-size: 100 + $adjusted-score * 10%;
+        opacity: 0.7 + $adjusted-score * 0.1;
+    }
+}
+  

@@ -1,0 +1,77 @@
+* Preparation
+** TURN OFF WIFI
+** PLUG IN
+** set resolution to 800x600
+** quit all, start: Terminal, Emacs, Keynote, Safari
+** emacs: prep-for-preso
+*** resize safari, emacs to show terminal
+** open three terminal windows
+*** cd to ~/Desktop/rubyhoedown/demo/ideabox %1, %2
+** run ./script/cluster-routing.sh
+** source ./script/node1env in %1
+** source ./script/node2env in %2
+** source ./script/node1env in %3
+** clear in %2
+** make %2 half height
+** cd to ~/Desktop/rubyhoedown/demo/tweet-grabber in %3
+** switch back to %1
+** ./script/prep.sh
+** $JBOSS_HOME/bin/standalone.sh
+** switch to safari and load app
+
+* Boss wants ideas on twitter
+** show slow response
+** open app/models/idea.rb
+*** bg1
+** show improved response
+** discuss messaging
+** mention reloads
+
+* Boss wants ideas emailed
+** create app/jobs/random_idea_sender.rb
+*** job1
+** create config/torquebox.rb
+*** job2
+** restart and show log
+
+* Boss wants feed
+** create app/services/tweet_grabber.rb
+*** serv1
+** open config/torquebox.rb
+*** serv2
+** open app/stomplets/tweet_stomplet.rb
+*** stomp1
+** open config/torquebox.rb
+*** stomp2
+** restart and show interface
+** MENTION THAT JS IS IMPLEMENTED
+
+* Boss wants filter
+** create app/processors/tweet_analyzer.rb
+*** proc1
+** open config/torquebox.rb
+*** proc2 on queue
+*** change stomplet queue to /queue/analyzed-tweets
+** restart and show interface
+
+* clustering
+** stop torquebox
+** ./script/node1 in %1
+** resize window to show %2
+** ./script/node2 in %2
+** show activity
+** kill %1
+** start %1
+
+* clojure
+** stop cluster nodes
+** comment out service from torquebox.rb
+** switch to %1
+** fullscreen %1
+** call ./script/clear-tmp-data
+** run $JBOSS_HOME/bin/standalone.sh
+** load app in safari
+** switch to %3
+** deploy via lein2 immutant deploy
+** switch to %1 to show it loading
+** switch to safari

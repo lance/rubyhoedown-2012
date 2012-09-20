@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: tb stomp2
+# key: stomp2
+# --
+stomplet TweetStomplet do
+  route '/stomplet/tweets'
+  config do
+    queue_name '/queue/tweets'
+  end
+end

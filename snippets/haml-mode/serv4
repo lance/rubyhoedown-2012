@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: tb service4
+# key: serv4
+# --
+.right
+  %table.tweets
+    - @tweets.each do |tweet|
+      %tr
+        %td.text
+          %span.user
+            = tweet[:user]
+          = "- #{tweet[:text]}"
+      %tr
+        %td.time= DateTime.parse(tweet[:timestamp]).to_formatted_s(:db)
