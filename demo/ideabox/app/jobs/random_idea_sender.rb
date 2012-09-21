@@ -1,0 +1,11 @@
+class RandomIdeaSender
+  
+  def run
+    idea = Idea.order("RANDOM()").first
+    
+    #IdeaMailer.send_to_the_boss(idea).deliver if idea
+
+    puts "Idea sent to the boss"
+  end
+
+end
